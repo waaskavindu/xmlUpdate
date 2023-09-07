@@ -1,0 +1,303 @@
+<agent>
+   <agent_client>
+      <application>
+         <name>Agent Client</name>
+         <display>Agent Client</display>
+         <description>No description</description>
+         <amount>5000</amount>
+         <jar>TravelBoxAgent</jar>
+         <version>3.0.0.68</version>
+         <img />
+      </application>
+      <application>
+         <name>Agent Runner</name>
+         <display>Agent Runner</display>
+         <description>No description</description>
+         <jar>AgentRunner</jar>
+         <version>3.0.0.1</version>
+         <img />
+      </application>
+   </agent_client>
+   <booking>
+      <application>
+         <name>Reservation Manager</name>
+         <display>Reservation Manager</display>
+         <description>The Reservation Manager will be a comprehensive reservation management system</description>
+         <jar>ReservationClient</jar>
+         <version>3.0.0.243</version>
+         <img />
+      </application>
+   </booking>
+   <contracts>
+      <application>
+         <name>Accommodation</name>
+         <display>Accommodation</display>
+         <description>Allows loading of all supplier Nett/gross contracts</description>
+         <jar>AccommodationLoadingClient</jar>
+         <version>3.0.0.44</version>
+         <img />
+      </application>
+      <application>
+         <name>Accom Inventory Manager</name>
+         <display>Accom Inventory Manager</display>
+         <description>Allow managing inventory for hotels</description>
+         <jar>AccomInventoryManagerClient</jar>
+         <version>3.0.0.160</version>
+         <img />
+      </application>
+      <application>
+         <name>Availability Checker</name>
+         <display>Availability Checker</display>
+         <description>To check availability</description>
+         <jar>AvailabilityCheckerClient</jar>
+         <version>3.0.0.18</version>
+         <img />
+      </application>
+      <application>
+         <name>Car Hire</name>
+         <display>Car Hire</display>
+         <description>Car Hire module caters to  any car rental contract</description>
+         <jar>CarClient</jar>
+         <version>3.0.0.56</version>
+         <img />
+      </application>
+      <application>
+         <name>Cruise Manager</name>
+         <display>Cruise Manager</display>
+         <description>This application is used to load cruise contracts</description>
+         <jar>CruiseLoadingClient</jar>
+         <version>3.0.0.13</version>
+         <img />
+      </application>
+      <application>
+         <name>Document Manager</name>
+         <display>Document Manager</display>
+         <description>The flexibility in creating the templates for customer and supplier sent documents</description>
+         <jar>DocumentManagerClient</jar>
+         <version>3.0.0.19</version>
+         <img />
+      </application>
+      <application>
+         <name>Document Repository Client</name>
+         <display>Document Repository</display>
+         <description>Allows generation ,viewing and dispatching of customer or supplier documents</description>
+         <jar>DocumentRepositoryClient</jar>
+         <version>3.0.0.36</version>
+         <img />
+      </application>
+      <application>
+         <name>Fares Manager</name>
+         <display>Fares Manager</display>
+         <description>This module allows Nett/Air-pass/ Charter contract loading of any airline</description>
+         <jar>FaresManagerLoadingClient</jar>
+         <version>3.0.0.18</version>
+         <img />
+      </application>
+      <application>
+         <name>Flight Allocations</name>
+         <display>Flight Allocations</display>
+         <description>This module is capable of accepting flight allocations of all airlines</description>
+         <jar>FlightAllocationsClient</jar>
+         <version>3.0.0.13</version>
+         <img />
+      </application>
+      <application>
+         <name>Flight Inventory Manager</name>
+         <display>Flight Inventory Manager</display>
+         <description>This module helps to manage flight inventory</description>
+         <jar>FlightInventoryManagerClient</jar>
+         <version>3.0.0.1</version>
+         <img />
+      </application>
+      <application>
+         <name>Generic Loading</name>
+         <display>Generic Products</display>
+         <description>Generic module provides facility of loading contracts for any supplier product</description>
+         <jar>GenericLoadingClient</jar>
+         <version>3.0.0.147</version>
+         <img />
+      </application>
+      <application>
+         <name>Insurance</name>
+         <display>Insurance</display>
+         <description>Allows loading of any Insurance policy type contract</description>
+         <jar>InsuranceClient</jar>
+         <version>3.0.0.58</version>
+         <img />
+      </application>
+      <application>
+         <name>Package Builder</name>
+         <display>Package Builder</display>
+         <description>Package Builder is used to set up pre-build packages</description>
+         <jar>PackageBuilderClient</jar>
+         <version>3.0.0.86</version>
+         <img />
+      </application>
+      <application>
+         <name>Tour Builder</name>
+         <display>Tour Builder</display>
+         <description>Allows loading of all supplier given tour contracts</description>
+         <jar>TourLoadingClient</jar>
+         <version>3.0.0.30</version>
+         <img />
+      </application>
+      <application>
+         <name>Transfers</name>
+         <display>Transfers</display>
+         <description>Allows loading and amendment of transfer and excursion contracts by ground handlers</description>
+         <jar>TransferLoadingClient</jar>
+         <version>3.0.0.46</version>
+         <img />
+      </application>
+   </contracts>
+   <finance>
+      <application>
+         <name>Accounts</name>
+         <display>Accounts Manager</display>
+         <description>The module will keep track of the client receipts and the supplier payments for bookings</description>
+         <jar>AccountsClient</jar>
+         <version>3.0.0.85</version>
+         <img />
+      </application>
+      <application>
+         <name>GDSQueue Client</name>
+         <display>GDS Queue Client</display>
+         <description>The GDS Queue client used for GDS queue processing.</description>
+         <jar>GDSQueueManager</jar>
+         <version>3.0.0.30</version>
+         <img />
+      </application>
+      <application>
+         <name>Queue Client</name>
+         <display>Internal Queues</display>
+         <description>Facilitates monitoring of bookings based on an administrative, financial or post-sales purpose</description>
+         <jar>QueueClient</jar>
+         <version>3.0.0.117</version>
+         <img />
+      </application>
+      <application>
+         <name>Reporting Client</name>
+         <display>Reporting Client</display>
+         <description>Provide access to admin, accounting, finance and sales reports</description>
+         <jar>ReportingClient</jar>
+         <version>3.0.0.17</version>
+         <img />
+      </application>
+      <application>
+         <name>Ticket Uploader</name>
+         <display>Ticket Uploader</display>
+         <description>Ticketing Uploader performs post ticketing activities</description>
+         <jar>TicketingProcessor</jar>
+         <version>3.0.0.22</version>
+         <img />
+      </application>
+   </finance>
+   <setup>
+      <application>
+         <name>Administrator Module</name>
+         <display>Administrator</display>
+         <description>Defines TravelBox users , user groups and the permissions</description>
+         <jar>TravelBoxAdminClient</jar>
+         <version>3.0.0.119</version>
+         <img />
+      </application>
+      <application>
+         <name>Cache Manager</name>
+         <display>Cache Manager</display>
+         <description>Cache Manager</description>
+         <jar>CacheManagerClient</jar>
+         <version>3.0.0.1</version>
+         <img />
+      </application>
+      <application>
+         <name>Content Manager</name>
+         <display>Content Manager</display>
+         <description>The module is used for setting up multilanguage contents</description>
+         <jar>ContentLoadingClient</jar>
+         <version>3.0.0.44</version>
+         <img />
+      </application>
+      <application>
+         <name>Dashboard Client</name>
+         <display>Dashboard Client</display>
+         <description>Dashboard Client</description>
+         <jar>DashBoardClient</jar>
+         <version>3.0.0.25</version>
+         <img />
+      </application>
+      <application>
+         <name>Holiday Manager</name>
+         <display>Holiday Manager</display>
+         <description>Holidays Manager</description>
+         <jar>HolidayManagementClient</jar>
+         <version>3.0.0.115</version>
+         <img />
+      </application>
+      <application>
+         <name>Markup Manager</name>
+         <display>Markup Manager</display>
+         <description>The Markup Manager will be used in defining component and package margins for client groups</description>
+         <jar>TBXMarkupClient</jar>
+         <version>3.0.0.32</version>
+         <img />
+      </application>
+      <application>
+         <name>Supplier</name>
+         <display>Supplier</display>
+         <description>The module will allow creation and amendment of supplier information</description>
+         <jar>TBXSupplierClient</jar>
+         <version>3.0.0.25</version>
+         <img />
+      </application>
+      <application>
+         <name>TBX Client</name>
+         <display>Customer Profiles</display>
+         <description>The module allows maintenance of  trade client, trade agent and direct client information</description>
+         <jar>TBXClient</jar>
+         <version>3.0.0.60</version>
+         <img />
+      </application>
+      <application>
+         <name>TBX Setup</name>
+         <display>TBX Setup</display>
+         <description>Defines companies, brands and other parameters that are used across TravelBox modules</description>
+         <jar>TBXSetupClient</jar>
+         <version>3.0.0.89</version>
+         <img />
+      </application>
+      <application>
+         <name>Ticketing</name>
+         <display>Ticketing Client</display>
+         <description>Allows issuing of e-tickets and paper tickets for flight reservations</description>
+         <jar>TicketingClient</jar>
+         <version>3.0.0.15</version>
+         <img />
+      </application>
+   </setup>
+   <libraries>
+      <application>
+         <name>Java Runtime</name>
+         <display>Java Runtime Enviroment</display>
+         <description>jre1.8.0_221_4</description>
+         <jar>jre</jar>
+         <version>3.0.0.7</version>
+         <img />
+      </application>
+      <application>
+         <name>Java Runtime 64</name>
+         <display>Java Runtime Enviroment (64 bit)</display>
+         <description>jre1.8.0_221_4</description>
+         <jar>jre_64</jar>
+         <version>3.0.0.7</version>
+         <img />
+      </application>
+      <application>
+         <name>System Libraries</name>
+         <display>System Libraries</display>
+         <description>System Libraries</description>
+         <jar>lib</jar>
+         <version>3.0.0.1</version>
+         <img />
+      </application>
+   </libraries>
+</agent>
