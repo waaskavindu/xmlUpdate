@@ -2,6 +2,9 @@ import xml.etree.ElementTree as ElementTree
 
 import difflib
 
+import os    
+
+
 def getData(jarName,xml_filename,validationRun):
     try:
     # Parse the XML file
@@ -65,13 +68,21 @@ def validation(releasevalue):
     getData(releasevalue,xml_filename,True)
 
 if __name__ == "__main__":
-    xml_filename = "agent.xml" 
+    XML_UPDATE_LOCATION = os.environ.get("XML_UPDATE_LOCATION")
+    CURRENT_REPO = os.environ.get("CURRENT_REPO")
+    xml_filename = f"{CURRENT_REPO}/CLIENTS/agent.xml"
+    releasebuilds_file_path = f"{XML_UPDATE_LOCATION}/releasebuilds"
     element_path = "*/application/version" 
-   
-    releasebuilds = readFiles("releasebuilds") # store jar names which needed to update
-    
-    for releasekey, releasevalue in releasebuilds.items():
-        getData(releasevalue,xml_filename,False)
-        validation(releasevalue)
+    releasebuilds = readFiles(releasebuilds_file_path) # store jar names which needed to update
+
+    if (os.path.getsize(releasebuilds_file_path) == 0 ) :
+        print ("+-------------------------------------------------------------------------+")
+        print ("|--------------------------NO CLIENTS TO UPDATE---------------------------|")
+        print ("+-------------------------------------------------------------------------+")
+
+    else:
+        for releasekey, releasevalue in releasebuilds.items():
+            getData(releasevalue,xml_filename,False)
+            validation(releasevalue)
 
 
